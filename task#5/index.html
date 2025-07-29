@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./content/css/style.css" />
+</head>
+<body>
+  <!-- Scroll to top button -->
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+
+  <header>
+    <h1>Syeda Tooba</h1>
+    <p>Web Developer Intern</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="fade-in">
+      <h2>About Me</h2>
+      <img src="./content/img/img1.jpg" class="profile-img" alt="Profile Picture" />
+      <p>I am a passionate web developer intern who loves building clean and responsive websites. I am learning HTML, CSS, and JavaScript. I enjoy solving problems and creating interactive user experiences. I am excited to grow as a full-stack developer.</p>
+    </section>
+
+    <section id="projects" class="fade-in">
+      <h2>Projects</h2>
+      <div class="project-cards">
+        <div class="card">
+          <h3>Project One</h3>
+          <p>A responsive landing page using HTML and CSS.</p>
+          <a href="#">View Project</a>
+        </div>
+        <div class="card">
+          <h3>Project Two</h3>
+          <p>Interactive contact form with JavaScript validation.</p>
+          <a href="#">View Project</a>
+        </div>
+        <div class="card">
+          <h3>Project Three</h3>
+          <p>Portfolio website showcasing my work.</p>
+          <a href="#">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="./app/script.js"></script>
+</body>
+</html>
