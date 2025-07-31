@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>What Our Interns Say</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    header p {
+      color: #666;
+      font-size: 1.1rem;
+    }
+
+    .testimonials {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .testimonial-card {
+      background: white;
+      border-radius: 15px;
+      padding: 30px 20px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+
+    .testimonial-card img {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #007BFF;
+      margin-bottom: 15px;
+    }
+
+    .testimonial-card h3 {
+      margin: 10px 0 2px;
+      font-size: 1.2rem;
+      color: #222;
+    }
+
+    .testimonial-card span {
+      font-size: 0.95rem;
+      color: #777;
+    }
+
+    .testimonial-card blockquote {
+      margin-top: 15px;
+      font-style: italic;
+      font-size: 0.95rem;
+      color: #555;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .testimonial-card blockquote::before {
+      content: "“";
+      font-size: 2rem;
+      color: #007BFF;
+      position: absolute;
+      left: 0;
+      top: -10px;
+    }
+
+    .stars {
+      margin-top: 10px;
+      color: #FFD700;
+    }
+
+    /* Scroll to top */
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      padding: 12px 16px;
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer;
+      display: none;
+      z-index: 100;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .testimonial-card {
+        padding: 25px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>What Our Interns Say</h1>
+    <p>Hear from those who completed our program</p>
+  </header>
+
+  <section class="testimonials">
+    <div class="testimonial-card">
+      <img src="./content/img/download.png" alt="Intern 1">
+      <h3>Aisha Khan</h3>
+      <span>Front-End Intern</span>
+      <blockquote>
+        This internship helped me grow my HTML/CSS skills and build real projects.
+      </blockquote>
+      <div class="stars">★★★★★</div>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="./content/img/download.png" alt="Intern 2">
+      <h3>Ali Raza</h3>
+      <span>UI/UX Intern</span>
+      <blockquote>
+        Amazing mentorship and support. The UI/UX tasks were very engaging!
+      </blockquote>
+      <div class="stars">★★★★☆</div>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="./content/img/download.png" alt="Intern 3">
+      <h3>Sana Malik</h3>
+      <span>WordPress Intern</span>
+      <blockquote>
+        I customized multiple WordPress sites and learned client communication.
+      </blockquote>
+      <div class="stars">★★★★★</div>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="./content/img/download.png" alt="Intern 4">
+      <h3>Hamza Noor</h3>
+      <span>SEO Intern</span>
+      <blockquote>
+        The SEO tasks taught me how to rank websites effectively. Highly recommend!
+      </blockquote>
+      <div class="stars">★★★★☆</div>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="./content/img/download.png" alt="Intern 5">
+      <h3>Mehwish Ali</h3>
+      <span>React Intern</span>
+      <blockquote>
+        The projects were fun and challenging. Helped me understand components better.
+      </blockquote>
+      <div class="stars">★★★★★</div>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="./content/img/download.png" alt="Intern 6">
+      <h3>Talha Siddiqui</h3>
+      <span>Mobile App Intern</span>
+      <blockquote>
+        Building apps during this internship was the best learning experience!
+      </blockquote>
+      <div class="stars">★★★★★</div>
+    </div>
+  </section>
+
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+
+  <script>
+    // Scroll to top functionality
+    const scrollBtn = document.getElementById("scrollTopBtn");
+
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollBtn.style.display = "block";
+      } else {
+        scrollBtn.style.display = "none";
+      }
+    };
+
+    scrollBtn.onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+
+</body>
+</html>

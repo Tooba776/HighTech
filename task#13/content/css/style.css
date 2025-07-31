@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.resume-header h1 {
+  font-size: 2.5rem;
+  color: #222;
+}
+
+.resume-header .title {
+  font-size: 1.2rem;
+  color: #007BFF;
+}
+
+.tagline {
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+.contact-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-section p {
+  margin: 5px;
+  font-size: 0.95rem;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  margin: 0 8px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #007BFF;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-left: 15px;
+}
+
+.resume-main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.resume-block {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.resume-block h2 {
+  margin-bottom: 10px;
+  color: #007BFF;
+}
+
+.skills-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.experience-item, .project-item {
+  margin-bottom: 15px;
+}
+
+.experience-item h3 {
+  margin: 0;
+}
+
+.experience-item span {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.project-item a {
+  color: #007BFF;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.project-item a:hover {
+  text-decoration: underline;
+}
+
+/* Scroll to top button */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 14px;
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .resume-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .resume-block {
+    padding: 15px;
+  }
+}

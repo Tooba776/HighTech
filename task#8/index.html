@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #333;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #666;
+    }
+
+    .services {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 30px 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .card i {
+      font-size: 40px;
+      color: #007BFF;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    .card button {
+      margin-top: 15px;
+      padding: 8px 16px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .card button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Scroll to top */
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      padding: 12px 16px;
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer;
+      display: none;
+      z-index: 100;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .card h3 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Our Services</h1>
+    <p>Explore the areas where we help you grow</p>
+  </header>
+
+  <section class="services">
+    <div class="card">
+      <i class="fas fa-code"></i>
+      <h3>Web Development</h3>
+      <p>Responsive and modern websites for businesses.</p>
+      <button>Learn More</button>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-paint-brush"></i>
+      <h3>UI/UX Design</h3>
+      <p>Creative and user-focused interface designs.</p>
+      <button>Learn More</button>
+    </div>
+
+    <div class="card">
+      <i class="fab fa-wordpress"></i>
+      <h3>WordPress Customization</h3>
+      <p>Theme setups, plugin tweaks, and custom features.</p>
+      <button>Learn More</button>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-search"></i>
+      <h3>SEO Optimization</h3>
+      <p>Rank higher on search engines with proven techniques.</p>
+      <button>Learn More</button>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-bullhorn"></i>
+      <h3>Digital Marketing</h3>
+      <p>Engage your audience and grow your online presence.</p>
+      <button>Learn More</button>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-mobile-alt"></i>
+      <h3>Mobile App Development</h3>
+      <p>Cross-platform apps that perform smoothly.</p>
+      <button>Learn More</button>
+    </div>
+  </section>
+
+  <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+  <script>
+    // Scroll to top button
+    const scrollBtn = document.getElementById("scrollTopBtn");
+
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollBtn.style.display = "block";
+      } else {
+        scrollBtn.style.display = "none";
+      }
+    };
+
+    scrollBtn.onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+
+</body>
+</html>
