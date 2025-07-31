@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - CoreTech Innovations</title>
+  <link rel="stylesheet" href="./content/css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#" class="active">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Our Services</h1>
+    <p>What we offer at CoreTech Innovations</p>
+  </header>
+  
+  <main>
+    <div class="tab-container">
+      <button class="tablinks active" onclick="openService(event, 'web-development')">Web Development</button>
+      <button class="tablinks" onclick="openService(event, 'mobile-app')">Mobile App Development</button>
+      <button class="tablinks" onclick="openService(event, 'digital-marketing')">Digital Marketing</button>
+    </div>
+    
+    <div id="web-development" class="service-content active">
+      <h2>Web Development</h2>
+      <p>We specialize in creating responsive and scalable web applications tailored to your needs.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+    
+    <div id="mobile-app" class="service-content">
+      <h2>Mobile App Development</h2>
+      <p>Designing and developing cross-platform mobile apps that enhance user experience and engagement.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+    
+    <div id="digital-marketing" class="service-content">
+      <h2>Digital Marketing</h2>
+      <p>Strategic digital campaigns to boost your brand's online presence and drive conversions.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </main>
+
+  <script src="./app/script.js"></script>
+</body>
+</html>
